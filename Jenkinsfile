@@ -8,6 +8,6 @@ node{
      sh "${mvnHome}/bin/mvn package"
   }
    stage('Deploy'){
-      deploy adapters: [tomcat7(credentialsId: 'deploy_user', path: '', url: 'http://13.233.116.10:8080')], contextPath: null, war: '**/*.war'
+      deploy adapters: [tomcat7(credentialsId: 'deploy_user', path: '', url: 'http://13.233.139.145:8080')], contextPath: null, war: '**/*.war'
    }
 }
